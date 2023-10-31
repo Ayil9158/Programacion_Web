@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+  border: 1px blue solid;
+  padding: 15px;
+  text-align: center;
+}
+.contenedor1{
+  background-image: url(imagenes/fondo2.jpg);
+  height: 400px;
+  vertical-align: middle;
+}
+.contenedor1 h1{
+  background-color: rgba(255, 254, 254, 0.488);
+  font-family: Impact;
+  padding: 30px;
+}
+.btn_naranja{
+  background-color: orange;
+  text-decoration: none;
+  color: white;
+  padding: 20px 25px;
+}

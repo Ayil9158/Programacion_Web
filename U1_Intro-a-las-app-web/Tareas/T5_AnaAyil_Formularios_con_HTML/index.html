@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios con HTML</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="contenedorimagenes ancho">
+    <p>Te OFRECEMOS una amplia variedad de <span>SEGUROS DE DIFERENTES MARCAS:</span></p>
+    <br>
+    <img class="imgtipo1" src="imagenes/segurosmonterrey.jpg" alt="logo de seguros monterrey">
+    <img class="imgtipo2" src="imagenes/logometlife.jpg" alt="logo de metlife">
+    <img class="imgtipo3" src="imagenes/logoqualitas.jpg" alt="logo de qualitas">
+    <img class="imgtipo1" src="imagenes/segurosmultiva.jpg" alt="logo de seguros multiva">
+    <img class="imgtipo2" src="imagenes/allianz.jpg" alt="logo de allianz">
+    <img class="imgtipo4" src="imagenes/aig.jpg" alt="logo de aig">
+  </div>
+  <div class="contenedorformulario ancho">
+    <h2>¿Estás interesado en algun tipo de seguro?</h2><br>
+    <p>Déjanos tus datos y contactaremos contigo:</p>
+    <p>(Campos obligatorios *)</p><br>
+    <form action="" method="get">
+      <input class="camp" type="text" placeholder="* Nombre" required>
+      <br><br>
+      <input class="camp" type="text" placeholder="* Apellidos" required>
+      <br><br>
+      <input class="camp" type="tel" placeholder="* Telefono" pattern="[0-9]{10}" maxlength="10" required>
+      <br><br>
+      <select class="camp" name="seguros" id="" class="login" required>
+        <option class="txtcolor" value="">Escoge tu seguro</option>
+        <option class="txtcolor" value="s1">Seguros Monterrey</option>
+        <option class="txtcolor" value="s2">Seguros MetLife</option>
+        <option class="txtcolor" value="s3">Seguros Quálitas</option>
+        <option class="txtcolor" value="s4">Seguros Multiva</option>
+        <option class="txtcolor" value="s5">Seguros Allianz</option>
+        <option class="txtcolor" value="s6">Seguros AIG</option>
+      </select>
+      <br><br>
+      <textarea class="comentarios" placeholder="Comentarios" ></textarea>
+	  <br><br>
+	  <div class="contenedorterm">
+		  <input type="checkbox" class="checktyc">
+		  <label class="termycond" for="">He leído y aceptado las <a target="_blank" href="https://www.riotgames.com/es-419/terms-of-service-LATAM#id.z9jbmasqvbz"> condiciones legales</a></label>
+      </div>
+	  <br><br>
+	  <div class="ancho2">
+		  <input type="submit" class="solicitud" value="SOLICITAR INFORMACIÓN" required>
+	  </div>
+      <br>
+    </form>
+  </div>
+  <br><br>
+</body>
+</html>

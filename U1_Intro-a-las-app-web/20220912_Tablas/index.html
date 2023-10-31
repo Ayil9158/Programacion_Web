@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TABLAS CON HTML</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="contenedortablas ancho">
+    <h1>TABLAS CON HTML</h1>
+    <table class="tabla1">
+      <!-- tr representa a toda una fila mientras que td reprecenta cada celda dentro de la fila td -->
+      <!-- fila 1 -->
+      <tr class="titulostabla">
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>Curso</th>
+      </tr>
+      <!-- fila 2 -->
+      <tr class="fondoazul">
+        <td>Juan</td>
+        <td>Perez</td>
+        <td>21 años</td>
+        <td>Programacion Web</td>
+      </tr>
+      <!-- fila 3 -->
+      <tr>
+        <td>Maria</td>
+        <td>Gonzales</td>
+        <td>20 años</td>
+        <td>Backend</td>
+      </tr>
+      <!-- fila 4 -->
+      <tr class="fondoazul">
+        <td>Fernando</td>
+        <td>Gamboa</td>
+        <td>23 años</td>
+        <td>Frontend</td>
+      </tr>
+    </table>
+    <br><br>
+    <h2>Tabla 2</h2>
+    <table class="tabla2">
+      <tr class="calendario">
+        <th colspan="3">CALENDARIO DE CURSOS CECATI</th>
+      </tr>
+      <tr>
+        <td class="medida">Sabado</td>
+        <td class="naranja">Domingo</td>
+        <td>Lunes</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Curso HTML y Curso Photoshop CC</td>
+        <td class="naranja">Curso CSS</td>
+        <td>Curso Javascript</td>
+      </tr>
+      <tr>
+        <!-- <td>Curso HTML y Curso Photoshop CC</td> -->
+        <td class="naranja">Curso de Animate CC</td>
+        <td>Curso de Tinkercad 3D</td>
+      </tr>
+    </table>
+    <br><br>
+    <h2>Tabla 3</h2>
+    <table class="tabla3">
+      <tr>
+        <td rowspan="2"><img src="imagenes/icon_telcel_5g.jpg" alt=""></td>
+        <td rowspan="2">Internet <br> 14GB</td>
+        <td rowspan="2">WhatsApp, Facebook, Twitter, Snapchat, Instagram y UBER <br> ilimitado</td>
+        <td rowspan="2"> Minutos y SMS incluidos <br> ilimitados</td>
+        <td rowspan="2">$599.00 <br> /mes</td>
+        <td><a href="#" class="btn_morado">ver detalles</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">comparar</a></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia en HTML</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Etiquetas para multimedia con HTML</h1>
+  <br>
+  <div class="contenedorvideo ancho">
+    <video controls class="video">
+      <!-- a lo de arriba se le puede poner un autoplay  -->
+      <source src="multimedia/video_spa.mp4">
+    </video>
+    <br><br>
+    <h2>YOUTUBE</h2>
+    <div class="contenedoryoutube">
+      <iframe class="videoyoutube" width="560" height="315" src="https://www.youtube.com/embed/4Z6Tnit810Y" title="YouTube video player" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br><br>
+    <h2>SONIDO MP3</h2>
+    <div class="contenedoraudio">
+      <audio controls loop="true">
+        <!-- agregar autoplay="true" para el autoplay -->
+        <source src="multimedia/audio_spa.mp3">
+      </audio>
+    </div>
+    <br><br>
+    <h2>MAPA CON HTML</h2>
+  </div>
+  <div class="contenedormapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.504995966414!2d-89.62435088506763!3d21.012470586007225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5676a65077d641%3A0x39dfe74777312656!2sInstituto%20Tecnol%C3%B3gico%20de%20M%C3%A9rida!5e0!3m2!1ses-419!2smx!4v1662682225959!5m2!1ses-419!2smx" class="mapa" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <br><br><br>
+  <!-- <div class="contenedorpagina ancho">
+    <iframe src="http://www.itmerida.mx" frameborder="0"></iframe>
+  </div> -->
+  <br>
+  <div class="contenedormarquesina ancho">
+    <br>
+    <h2 class="titulomarquesina">MARQUESINA DE CONTENIDO</h2>
+    <br>
+    <marquee behavior="scroll" direction="right" id="textoanimado" scrollamount="12" class="marquesina"  onmouseover="this.stop();" onmouseout="this.start();">
+      <h2>Titulo de la marquesita</h2>
+      <br>
+      <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsum repudiandae numquam quaerat ipsa, autem ab, itaque, nihil sed voluptate nobis reiciendis pariatur quibusdam dolorum animi hic officiis. Voluptate, illum.</p>
+      <br>
+      <a href="#" class="btn_rojo">ver mas</a>
+    </marquee>
+    <br><br>
+    <input type="button" class="rojo" value="Detener" onclick="document.getElementById('textoanimado').stop();">
+    <input type="button" class="azul" value="Continuar" onclick="document.getElementById('textoanimado').start();">
+  </div>
+</body>
+</html>
