@@ -1,0 +1,93 @@
+/*comentarios en css*/
+span {
+  font-weight: bold; /*sirve para negritas */
+  font-style: italic; /*sirve para cursivas*/
+  text-decoration: underline; /*sirve para subrayar*/
+  color: red;
+}
+body {
+font-family: Helvetica;
+font-size: 16px;
+line-height: 24px;
+color: #333;
+background-image: url(imagenes/textura1.jpg);
+/* background-size: cover; */
+/* este evita que la imagen se mueva, que sea estatica para toda la pagina */
+background-attachment: fixed;
+}
+/* css para etiquetas */
+h2 {
+  /* este es para dejar espacios entre una letra y otra */
+  /* letter-spacing: 10px; */
+  /* font-weight:normal;*/
+}
+/* css para el id */
+#uno {
+}
+/* css para la clase */
+.contenedor1 {
+  border: 1px red dotted;
+  max-width: 700px;
+  margin: auto; /*sirve para centrar una caja*/
+  text-align: center; /*sirve para centrar el contenido de la caja*/
+}
+.titulo1 {
+  border: 1px green solid;
+ padding: 15px;
+}
+.lista1 {
+  border: 1px red solid;
+  /* padding-left: 0px; */
+}
+.lista2{
+  background-color: #ececec;
+  /* orden del padding: arriba, derecha, abajo y izquierda */
+  padding:15px 15px 15px 40px;
+}
+.contenedorfoto1 {
+  margin: auto;
+  width: 550px;
+  text-align: center;
+}
+.foto1 {
+  border: 10px white solid;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  /* cuanto se va a mover la sombra en el eje de las X y las Y, despues el 3ro es que tanto se va a alejar */
+  box-shadow: 0px 0px 10px #ccc;
+  /* es para que se vea optima la foto, no se deforme con el width-height, esta redimensiona la parte que se pide en una parte de la foto */
+  /* object-fit: cover; */
+}
+.foto2 {
+  border: 10px #1c9892 solid;
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+}
+.foto3 {
+  width: 700px;
+}
+.contenedorfoto {
+  border: 1px blue solid;
+  margin: auto;
+  max-width: 1200px;
+  height: 500px;
+  background-image: url(imagenes/fondo2.jpg);
+  /* el primero es para que no se repita la imagen de fondo, el segundo es para que me llene todo el contenedor, el tercero mueve la posicion de la imagen (sirve mejor con el object-fit: cover;) */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.contenedorfoto h1 {
+  /* esto solo afectara a los h1 dentro del div con la clase llamada contenedorfoto */
+  color:red;
+  text-align:center;
+}
+.iconofacebook{
+  width: 50px;
+  vertical-align:middle;
+}
+.contenedorfacebook span{
+  vertical-align: middle;
+}

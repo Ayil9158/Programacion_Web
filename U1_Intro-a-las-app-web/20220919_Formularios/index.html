@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>FORMULARIOS</title>
+</head>
+<body>
+<h1>FORMULARIO PARA HTML</h1>
+<div class="contenedorformulario ancho" >
+<form action="" method="" enctype="" >
+  <label for="">Nombre:</label>
+<!--Trae 3 atributos: Get es url-->
+<input type="text" class="nombre" >
+<br><br>
+<input type="text" class="nombre" placeholder="Nombre" maxlength="5">
+<br><br>
+<input type="password" class="nombre" placeholder="Password" >
+<br><br><br>
+<fieldset>
+  <legend>Acceso al sistema</legend>
+  <input type="text" class="login" placeholder="Usuario">
+  <br>
+  <input type="password" class="login" placeholder="Contraseña" required >
+</fieldset>
+<br><br>
+
+<fieldset class="alumno" >
+  <legend>Información del alumno</legend>
+  <br>
+  <input type="text" class="login" placeholder="Nombre(s)">
+  <input type="text" class="login" placeholder="Apellido paterno">
+  <input type="text" class="login" placeholder="Apellido materno">
+  <br>
+  <input type="email" placeholder="Email" class="login">
+  <input type="tel" placeholder="999" pattern="[0-9]{10}" maxlength="10" class="login">
+  <input type="number" max="10" placeholder="Edad" class="edad">
+  <input type="date" class="login">
+  <br>
+</fieldset>
+<br>
+<fieldset>
+  <legend>Horario de clase</legend>
+  <br>
+  <input type="radio" name="horario" value="MATUTINO" ><label class="titulo_horarios" for="">Matutino</label><br>
+  <input type="radio" name="horario" value="VESPERTINO"><label  class="titulo_horarios" for="">Vespertino</label><br>
+  <input type="radio" name="horario" value="SOLO SABADOS"><label  class="titulo_horarios" for="">Solo Sabados</label>
+  <br>
+  <br><br>
+  <input type="checkbox" name="web" value="web"><label class="titulo_horarios" for="">Programación web</label><br>
+  <input type="checkbox" name="backend" value="backend"><label class="titulo_horarios" for="">Backend</label><br>
+  <input type="checkbox" name="fronted" value="fronted"><label class="titulo_horarios" for="">fronted</label><br>
+</fieldset>
+<br><br>
+<fieldset>
+  <legend>Semestre del alumno</legend>
+  <br>
+  <select name="semestre" id="" class="login" >
+    <option value="">Escoge tu semestre</option>
+    <option value="1">1 Semestre</option>
+    <option value="2">2 Semestre</option>
+    <option value="3">3 Semestre</option>
+    <option value="4">4 Semestre</option>
+    <option value="5">5 Semestre</option>
+    <option value="6">6 Semestre</option>
+    <option value="7">7 Semestre</option>
+    <option value="8">8 Semestre</option>
+    <option value="9">9 Semestre</option>
+  </select>
+  <br>
+  <br>
+  <textarea name="" id="" class="comentarios" placeholder="Escribe tu comentario" ></textarea>
+  <BR></BR>
+</fieldset>
+<br><br><br>
+<input type="submit" value="Enviar" class="btn_enviar" >
+<input type="reset" value="Borrar" class="btn_borrar" >
+</form>
+</div>
+</body>
+</html>
